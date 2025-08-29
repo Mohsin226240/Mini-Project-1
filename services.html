@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acme Co. — Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header sticky">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Acme<span>Co</span></a>
+            <nav class="site-nav" aria-label="Main Navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" aria-current="page">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button id="themeToggle" class="btn btn-ghost" aria-label="Toggle theme">🌓</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero">
+            <div class="container narrow">
+                <h1 class="section-title center reveal" data-anim="fade-up">Our Services</h1>
+                <p class="center reveal" data-anim="fade-up">From idea to launch, we partner with you end‑to‑end.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid four services">
+                    <article class="card hoverable reveal" data-anim="fade-up">
+                        <div class="icon xl">🧭</div>
+                        <h3>Discovery & Research</h3>
+                        <p>User interviews, competitive analysis, and opportunity mapping.</p>
+                    </article>
+                    <article class="card hoverable reveal" data-anim="fade-up">
+                        <div class="icon xl">📐</div>
+                        <h3>Design Systems</h3>
+                        <p>Scalable UI libraries, accessibility, and brand consistency.</p>
+                    </article>
+                    <article class="card hoverable reveal" data-anim="fade-up">
+                        <div class="icon xl">⚙️</div>
+                        <h3>Web Applications</h3>
+                        <p>React, Node, and cloud‑native backends for speed and scale.</p>
+                    </article>
+                    <article class="card hoverable reveal" data-anim="fade-up">
+                        <div class="icon xl">📈</div>
+                        <h3>Growth & Optimization</h3>
+                        <p>Experimentation, analytics, and performance tuning.</p>
+                    </article>
+                </div>
+                <div class="center actions reveal" data-anim="fade-up" style="margin-top:2rem;">
+                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Acme Co. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="GitHub">GH</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>window.currentPage = 'services';</script>
+</body>
+</html>
+
