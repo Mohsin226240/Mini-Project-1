@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acme Co. — Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header sticky">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Acme<span>Co</span></a>
+            <nav class="site-nav" aria-label="Main Navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                    <li><button id="themeToggle" class="btn btn-ghost" aria-label="Toggle theme">🌓</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero">
+            <div class="container narrow">
+                <h1 class="section-title center reveal" data-anim="fade-up">Contact Us</h1>
+                <p class="center reveal" data-anim="fade-up">Tell us about your project. We usually reply within one business day.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid two contact-grid">
+                <div class="contact-form card reveal" data-anim="fade-right">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="jane@example.com" required>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
+                        <div class="form-row">
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Project details..." required></textarea>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
+                        <div class="actions">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <aside class="contact-info reveal" data-anim="fade-left">
+                    <div class="card">
+                        <h3>Get in touch</h3>
+                        <p><strong>Email:</strong> hello@acmeco.test</p>
+                        <p><strong>Phone:</strong> +1 (555) 010-1234</p>
+                        <div class="socials">
+                            <a href="#">Twitter</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="map card">
+                        <iframe title="Acme Co. HQ" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531594!3d-37.81627974201133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzI0LjMiRQ!5e0!3m2!1sen!2sus!4v1600000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Acme Co. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="GitHub">GH</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-dialog" role="document">
+            <h3 id="modalTitle">Thank you!</h3>
+            <p>Your message has been submitted.</p>
+            <button class="btn btn-primary" data-close>Close</button>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>window.currentPage = 'contact';</script>
+</body>
+</html>
+
